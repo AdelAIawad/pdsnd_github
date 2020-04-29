@@ -345,14 +345,14 @@ def user_stats(df):
 
     # 'Gender' and 'Birth Year' is only available for Chicago and New York City
     # Check for these columns before attempting to access them
-
-    if 'Gender' in df.columns:
+ # change 2
+    if 'sex' in df.columns:
         # Display counts of gender
-        genders = df['Gender'].value_counts()
+        genders = df['sex'].value_counts()
         for idx in range(len(genders)):
             val = genders[idx]
-            gender = genders.index[idx]
-            print('    {0:21}'.format((gender + ':')), val)
+            sex = genders.index[idx]
+            print('    {0:21}'.format((sex + ':')), val)
 
     if 'Birth Year' in df.columns:
         # Display earliest, most recent, and most common year of birth

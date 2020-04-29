@@ -388,8 +388,7 @@ def display_raw_data(df):
             rows_end += show_rows
 
             print_line('.')
-            # change 2
-            print('\n    do you prefer to see the next {} rows?'.format(show_rows))
+            print('\n    do you want to see the next {} rows?'.format(show_rows))
             continue
         else:
             break
